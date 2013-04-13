@@ -19,8 +19,8 @@
 
 '''The setup and build script for the python-twitter library.'''
 
-__author__ = 'python-twitter@googlegroups.com'
-__version__ = '0.8.7'
+__author__ = 'niccokunzmann@aol.com'
+__version__ = '0.0.1'
 
 
 # The base package metadata to be used by both distutils and setuptools
@@ -38,17 +38,20 @@ METADATA = dict(
 
 # Extra package metadata to be used only if setuptools is installed
 SETUPTOOLS_METADATA = dict(
-    install_requires = ['setuptools', 'simplejson', 'oauth2', 'python-twitter'],
+    install_requires = ['setuptools', 'simplejson', 'oauth2', 'python-twitter', \
+                        'bson'],
     include_package_data = True,
     classifiers = [
-        'Development Status :: 1',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'License :: MIT',
+        'License :: OSI Approved :: MIT License',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Communications :: Chat',
+        'Topic :: Communications',
+        'Topic :: Games/Entertainment', 
         'Topic :: Internet',
+        'Topic :: Software Development :: Object Brokering', 
     ],
-    test_suite = 'distacc_test',
+##    test_suite = 'distacc_test',
 )
 
 
