@@ -22,30 +22,30 @@ __version__ = '0.8.7'
 
 # The base package metadata to be used by both distutils and setuptools
 METADATA = dict(
-    name = "python-twitter",
+    name = "distacc",
     version = __version__,
-    py_modules = ['twitter'],
-    author='The Python-Twitter Developers',
-    author_email='python-twitter@googlegroups.com',
-    description='A Python wrapper around the Twitter API',
-    license='Apache License 2.0',
-    url='https://github.com/bear/python-twitter',
-    keywords='twitter api',
+    py_modules = ['distacc'],
+    author='Nicco Kunzmann',
+    author_email='niccokunzmann@aol.com',
+    description='Distributed object access',
+    license='MIT',
+    url='https://github.com/niccokunzmann/distacc',
+    keywords='distributed game programming',
 )
 
 # Extra package metadata to be used only if setuptools is installed
 SETUPTOOLS_METADATA = dict(
-    install_requires = ['setuptools', 'simplejson', 'oauth2'],
+    install_requires = ['setuptools', 'simplejson', 'oauth2', 'python-twitter'],
     include_package_data = True,
     classifiers = [
-        'Development Status :: 4 - Beta',
+        'Development Status :: 1',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: MIT',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Communications :: Chat',
         'Topic :: Internet',
     ],
-    test_suite = 'twitter_test.suite',
+    test_suite = 'distacc_test',
 )
 
 
@@ -53,7 +53,7 @@ def Read(file):
     return open(file).read()
 
 def BuildLongDescription():
-    return '\n'.join([Read('README.md'), Read('CHANGES')])
+    return '\n'.join([Read('README.md'), ])
 
 def Main():
     # Build the long_description from the README and CHANGES
