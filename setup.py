@@ -13,6 +13,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# copied from https://github.com/bear/python-twitter/blob/master/setup.py
+#
 
 '''The setup and build script for the python-twitter library.'''
 
