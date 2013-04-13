@@ -15,3 +15,7 @@ def get_api():
 
 def get_authenticated_api():
     return twitter.Api(**credentials)
+
+def _print():
+    import pprint
+    pprint.pprint(credentials)

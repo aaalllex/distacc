@@ -67,7 +67,7 @@ def get(password, results_per_page = 15, api = None):
         api = credentials.get_api()
     page = 1
     while 1:
-        posts = a.GetSearch(HASHTAG, include_entities = True, page = page)
+        posts = api.GetSearch(HASHTAG, include_entities = True, page = page)
         if not posts:
             break
         for post in posts:
@@ -75,10 +75,10 @@ def get(password, results_per_page = 15, api = None):
             print 'text:', repr(text)
             if not text.startswith(HASHTAG + ' '):
                 continue
-            text = text[len(HASTAG) + 1:]
-            result = loads_post(password)
+            text = text[len(HASHTAG) + 1:]
+            result = loads_post(password, text)
             if result:
-                return result
+                yield result
         page += 1
 
 def post(password, api = None, **data):
