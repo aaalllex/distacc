@@ -1,4 +1,4 @@
-#!/usr/bin/python2.4
+#!/usr/bin/python2
 #
 # Copyright 2007 The Python-Twitter Developers
 #
