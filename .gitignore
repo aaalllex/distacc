@@ -33,6 +33,6 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
-/distacc/twitter_credentials.pickle
+/distacc/twitter/twitter_credentials.pickle
 /.pypirc
 *.egg-info
